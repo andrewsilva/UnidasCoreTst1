@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-
-import { ScriptConfig } from './config/script-config';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +7,7 @@ import { ScriptConfig } from './config/script-config';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'UnidasCore';
-
-
-  constructor(){
-
-  }
-
-  ngOnInit(){
-    ScriptConfig.loadScripts();
+  constructor(private router: Router){
+    this.router.initialNavigation();
   }
 }
