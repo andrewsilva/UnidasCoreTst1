@@ -28,5 +28,9 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+
+  "paths": {
+    "@azure/*": ["node_modules/@azure/*"]
+}
 }

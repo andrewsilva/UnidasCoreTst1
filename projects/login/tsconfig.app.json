@@ -11,5 +11,10 @@
   ],
   "include": [
     "src/**/*.d.ts"
-  ]
+  ],
+
+  "paths": {
+    "@azure/*": ["node_modules/@azure/*"]
+}
+
 }
